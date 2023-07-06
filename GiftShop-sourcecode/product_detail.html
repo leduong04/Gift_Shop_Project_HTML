@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <link rel="shortcut icon" href="assets/img/logo_title.png" type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- reuse css -->
+    <link rel="stylesheet" href="assets/style/reuse.css">
+    <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/homepage.css">
+    <link rel="stylesheet" href="assets/style/product_card.css">
+    <link rel="stylesheet" href="assets/style/product_detail.css">
+    <link rel="stylesheet" href="assets/style/footer.css">
+    <!-- custom css -->
+
+
+    <script src="assets/js/products.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="row mx-0">
+            <div class="col-md-5 " id="logo">
+                <a href="homepage.html"><img src="assets/img/logo.png" alt="" id="" height="114px" width="400px"></a>
+            </div>
+            <div class="col-md-7">
+                <ul id="nav">
+                    <li><a href="list_product.html">All product</a></li>
+                    <li><a href="category_product.html?category=Mugs">Mugs</a></li>
+                    <li><a href="category_product.html?category=Cards">Cards</a></li>
+                    <li><a href="category_product.html?category=Bracelets">Bracelets</a></li>
+                    <li>
+                        <a href="#">Brand</a>
+                        <ul class="subnav">
+                            <li><a href="brand_product.html?brand=amara">Amara</a></li>
+                            <li><a href="brand_product.html?brand=farfetch">Farfetch</a></li>
+                            <li><a href="brand_product.html?brand=hallmark">Hallmark</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="product_compare.html">Compare</a></li>
+                    <li><a href="contact_us.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <main>
+        <div class="containers">
+            <div class="pro-image">
+                <img src="#" alt="Product Image" id="productImage">
+            </div>
+            <div class="pro-dt">
+                <h1 class="name" id="productName"></h1>
+                <div id="rating"></div>
+                <h4><span style="font-weight: 600;">Brand:</span> <span class="brand" id="productBrand"
+                        style="text-transform: uppercase;"></span></h4>
+                <p class="short_descripton" id="productShort_description"></p>
+
+                <p class="description" id="productDescription"></p>
+                <p><span style="font-weight: 600;">Should be used for: </span> <span class="Should_be_used_for"
+                        id="productShould_be_used_for"></span></p>
+
+                <p><span style="font-weight: 600;">Suitable for: </span> <span class="Suitable_for"
+                        id="productSuitable_for"></span></p>
+
+                <p class="price" id="productSale" style="color: #cc1f3d;"></p>
+                <button>Buy now</button>
+            </div>
+
+
+            <div class="comments">
+                <h3>Product comments</h3>
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://i.pinimg.com/236x/6c/d4/e8/6cd4e8d56666f0e8c6b903ecc12817ed.jpg"
+                            alt="User Avatar" class="avatar">
+                    </div>
+                    <div class="comment-details">
+                        <span class="comment-name">Levi</span>
+                        <div class="comment-text">(～￣(OO)￣)ブ</div>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                </div>
+
+
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="https://i.pinimg.com/236x/c7/f1/db/c7f1dbe084eac0d9f2720470cf538b61.jpg"
+                            alt="User Avatar" class="avatar">
+                    </div>
+                    <div class="comment-details">
+                        <span class="comment-name">Private</span>
+                        <div class="comment-text">I love it (❁´◡`❁)</div>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <div class="comment-avatar">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="User Avatar" class="avatar">
+                    </div>
+                    <div class="comment-details">
+                        <span class="comment-name">Super smart</span>
+                        <div class="comment-text">:)))))))))))))</div>
+                        <span class="comment-time">1 hour ago</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <h2 class="related-products-heading">Related Products</h2>
+    <div class="container mt-3">
+        <ul id="relatedProducts" class="products ps-0">
+        </ul>
+    </div>
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/homepage.js"></script>
+    <script src="assets/js/product_detail.js"></script>
+    <div class="footer">
+        <div class="footer-left">
+            <img src="assets/img/logo.png" alt="">
+
+
+
+            <p class="footer-company-name">Copyright © 2023 <strong>TanDuo Gift shop</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>175 Tây Sơn Đống Đa</span>
+                    Hà Nội</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>0909999999</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">tanduogiftshop@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>TanDuo</strong> offers meaningful and carefully curated souvenir gifts. You can choose to
+                purchase gifts directly at our store or place an order online for direct delivery to the recipient on
+                the same day in Hanoi and Ho Chi Minh City, and within 2-5 days for other regions nationwide
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/homepage.js"></script>
+
+
+
+    <!--CDN scripts  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>

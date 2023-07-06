@@ -1,0 +1,11 @@
+
+h3 {
+    text-align: center;
+    color: #CC1F3D ;
+    text-transform: uppercase;
+}
+
+#img1, #img2{
+    width: 200px;
+    height: auto;
+}
